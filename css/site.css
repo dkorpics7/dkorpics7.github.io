@@ -1,0 +1,150 @@
+﻿body {
+
+}
+/* set color accent on bottom of navbar */
+.navbar {
+    border-bottom: 5px solid #1BAC91;
+}
+
+/* set size of logo on main page */
+div.logo img {
+    opacity: 0.4;
+    width: 182px;
+}
+/*.logo.img-circle {
+    width:182px;
+}*/
+
+/* set padding on top of slides so that the text doesn't overlap */
+#main-flexslider ul.slides li p {
+    line-height:normal;
+}
+
+/* set size of headshot picture */
+.headshot {
+    margin-left:20px;
+    margin-right:10px;
+    border-radius: 10px;
+    border: 5px groove black;
+    max-width:95%;
+}
+
+/* decrease spacing on the "About me" page */
+#about.section {
+    padding-top:80px;
+}
+#about.section h4 {
+    margin-bottom: 5px;
+}
+#about.section h2 {
+    margin-bottom: 10px;
+}
+.row.newstart {
+    margin-bottom: 10px;
+}
+.span7.offset1 .row {
+    margin-bottom:10px;
+}
+
+.team-thumb {
+    margin-top: 0px;
+    width: 60px;
+    height:60px;
+    padding: 5px 5px 5px 5px;
+    border: 3px groove #1BAC91;
+}
+
+/* make font a little darker for the "About Me" section */
+.span8.offset1 p {
+    font-weight: 500;
+}
+
+/* justify text in "A New Start" section */
+.newstart p {
+    text-align: justify;
+}
+
+/* set size of "team / many hats" pictures */
+
+/* italic font */
+.italic {
+    font-style:italic;
+}
+
+/*  popups for "many hats" */
+/* Outer */
+.popup {
+    width:100%;
+    height:100%;
+    display:none;
+    position:fixed;
+    top:0px;
+    left:0px;
+    background:rgba(0,0,0,0.75);
+}
+ 
+/* Inner */
+.popup-inner {
+    max-width:600px;
+    width:90%;
+    padding:40px;
+    position:absolute;
+    top:50%;
+    left:40%;
+    margin-left:25px;
+    margin-right:20px;
+    z-index:1;
+    -webkit-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%);
+    box-shadow:0px 2px 6px rgba(0,0,0,1);
+    border-radius:3px;
+    background:#fff;
+}
+.popup-inner p a {
+    color: #1BAC91;
+    font-weight:700;
+}
+ 
+/* Close Button */
+.popup-close {
+    width:30px;
+    height:30px;
+    padding-top:4px;
+    display:inline-block;
+    position:absolute;
+    top:0px;
+    right:0px;
+    transition:ease 0.25s all;
+    -webkit-transform:translate(50%, -50%);
+    transform:translate(50%, -50%);
+    border-radius:1000px;
+    background:rgba(0,0,0,0.8);
+    font-family:Arial, Sans-Serif;
+    font-size:20px;
+    text-align:center;
+    line-height:100%;
+    /*color:#fff;*/
+    color: #1BAC91;
+    font-weight:900;
+}
+ 
+.popup-close:hover {
+    -webkit-transform:translate(50%, -50%) rotate(180deg);
+    transform:translate(50%, -50%) rotate(180deg);
+    background:rgba(0,0,0,1);
+    text-decoration:none;
+}
+
+a.hats {
+    color: #1BAC91;
+}
+
+a.hats:hover {
+    font-weight: 700;
+}
+
+/* change size of turtle icon for quote */
+img.icon-rocket {
+    width: 7%;
+    opacity: 0.3;
+}
