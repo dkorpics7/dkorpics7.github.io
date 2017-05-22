@@ -1,0 +1,55 @@
+﻿body {
+    background-size: cover;
+    max-width: 100vw;
+    max-height: 100vh;
+    background-image: url('../img/works/VillaOnWater.jpg');
+}
+.row {
+    margin: 0px;
+    padding: 0px;
+
+}
+.navbar-wrapper {
+    max-height: 110px;
+}
+section {
+    min-height:90vh;
+}
+section.screenshots {
+    background-color:lightgray;
+    background-size:cover;
+}
+article.screenshots {
+margin: 80px;
+padding: 20px;
+}
+
+hr {
+    border-color:darkslateblue;
+}
+
+.thumbnail1  {
+    background-color: lightgray;
+    border: 5px solid darkslateblue;
+    color: darkslateblue;
+    font-weight: bold;
+    max-width:70%;
+    margin:auto;
+    margin-top:50px;
+    padding:20px;
+}
+h2 {
+    text-align:center;
+        color:darkslateblue;
+}
+h3 {
+    color:darkslateblue;
+}
+h4 {
+    text-align:left;
+        color:darkslateblue;
+}
+footer {
+    padding-top:10px;
+    padding-bottom:10px;
+}

@@ -17,6 +17,7 @@
         e.preventDefault();
         $('.people img').hide();
         $('.people p').hide();
+        $('.headshot').hide();
         $('ul.clearfix a').hide();
     });
 
@@ -28,6 +29,7 @@
         e.preventDefault();
         $('.people img').show();
         $('.people p').show();
+        $('.headshot').show();
         $('ul.clearfix a').show();
     });
 

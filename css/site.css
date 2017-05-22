@@ -23,7 +23,7 @@ div.logo img {
 /* set size of headshot picture */
 .headshot {
     margin-left:20px;
-    margin-right:10px;
+    margin-right:15px;
     border-radius: 10px;
     border: 5px groove black;
     max-width:95%;
@@ -72,6 +72,7 @@ div.logo img {
 }
 
 /*  popups for "many hats" */
+
 /* Outer */
 .popup {
     width:100%;
@@ -93,30 +94,42 @@ div.logo img {
     left:40%;
     margin-left:25px;
     margin-right:20px;
+    margin-top:30px;
     z-index:1;
     -webkit-transform:translate(-50%, -50%);
     transform:translate(-50%, -50%);
     box-shadow:0px 2px 6px rgba(0,0,0,1);
     border-radius:3px;
     background:#fff;
-}
-.popup-inner-project {
-    /*max-width:600px;*/
-    width:75%;
+
+/*.popup {
+    width:1200px;
+    height:700px;
+    display:none;
     position:absolute;
-    top:50%;
-    left:50%;
-    padding: 40px;
-    margin-left:25px;
+    top:-500px;
+    left:-150px;
+    background:rgba(0,0,0,0.75);
+}*/
+ 
+/*.popup-inner {
+    max-width:70%;
+    padding:40px;
+    position:absolute;
+    top:120px;
+    left:15%;
+    right:15%;
+    margin-left:5px;
     margin-right:20px;
-    -webkit-transform:translate(-50%, -50%);
-    transform:translate(-50%, -50%);
+    z-index:4;
+/*    -webkit-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%);*/
     box-shadow:0px 2px 6px rgba(0,0,0,1);
     border-radius:3px;
     background:#fff;
-}
+}*/
 
-.popup-inner p a, .popup-inner-project p a {
+.popup-inner p a {
     color: #1BAC91;
     font-weight:700;
 }
@@ -185,4 +198,12 @@ ul.social-networks {
 }
 form {
     margin-bottom:5px;
+}
+
+/* decrease padding at top of contact page */
+#contact {
+    padding-top:80px;
+}
+#contact.section.green div.container div.row {
+    margin-bottom:10px;
 }

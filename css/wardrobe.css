@@ -1,0 +1,54 @@
+﻿body {
+    background-size: cover;
+    max-width: 100vw;
+    max-height: 100vh;
+    background-image: url('../img/works/closet.jpg');
+}
+.row {
+    margin: 0px;
+    padding: 0px;
+
+}
+.navbar-wrapper {
+    max-height: 110px;
+}
+section {
+    min-height:90vh;
+}
+section.screenshots {
+    background-color:#704100;
+    background-size:cover;
+}
+article.screenshots {
+margin: 80px;
+padding: 20px;
+}
+
+hr {
+    border-color:white;
+}
+
+.thumbnail1  {
+    background-color: #E3A857;
+    background-color: moccasin;
+    border: 5px solid #704100;
+    color: #704100;
+    font-weight: bold;
+    max-width:70%;
+    margin:auto;
+    margin-top:50px;
+    padding:20px;
+}
+h2 {
+    text-align:center;
+}
+h3 {
+    color:white;
+}
+h4 {
+    text-align:left;
+}
+footer {
+    padding-top:10px;
+    padding-bottom:10px;
+}
