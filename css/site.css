@@ -148,3 +148,20 @@ img.icon-rocket {
     width: 7%;
     opacity: 0.3;
 }
+
+/* set minimum height on works/project page */
+#works {
+    min-height:500px;
+}
+
+/* add social media links onto contact page 
+    made changes in style.css file */
+ul.social-networks {
+    text-align: center;
+}
+.row .row {
+    margin-bottom:5px;
+}
+form {
+    margin-bottom:5px;
+}
