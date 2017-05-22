@@ -17,6 +17,7 @@
         e.preventDefault();
         $('.people img').hide();
         $('.people p').hide();
+        $('ul.clearfix a').hide();
     });
 
     //----- CLOSE
@@ -27,6 +28,7 @@
         e.preventDefault();
         $('.people img').show();
         $('.people p').show();
+        $('ul.clearfix a').show();
     });
 
 });

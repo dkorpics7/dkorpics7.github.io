@@ -100,7 +100,23 @@ div.logo img {
     border-radius:3px;
     background:#fff;
 }
-.popup-inner p a {
+.popup-inner-project {
+    /*max-width:600px;*/
+    width:75%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    padding: 40px;
+    margin-left:25px;
+    margin-right:20px;
+    -webkit-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%);
+    box-shadow:0px 2px 6px rgba(0,0,0,1);
+    border-radius:3px;
+    background:#fff;
+}
+
+.popup-inner p a, .popup-inner-project p a {
     color: #1BAC91;
     font-weight:700;
 }
@@ -135,11 +151,11 @@ div.logo img {
     text-decoration:none;
 }
 
-a.hats {
+a.hats, .people p {
     color: #1BAC91;
 }
 
-a.hats:hover {
+a.hats:hover, .people p:hover {
     font-weight: 700;
 }
 
@@ -152,6 +168,11 @@ img.icon-rocket {
 /* set minimum height on works/project page */
 #works {
     min-height:500px;
+}
+
+/* set max height for project square Villa */
+.villa {
+    max-height: 175px;
 }
 
 /* add social media links onto contact page 
