@@ -6,9 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
-            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-            crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        function toggle_visibility(id,id2) {
+            var e = document.getElementById(id);
+            var name = "#" + id2;
+            if (e.style.display == 'block') {
+                e.style.display = 'none';
+                $(name).show("slow");
+            } else {
+                e.style.display = 'block';
+                $(name).hide("50000");
+                $(name).show("50000");
+            }
+        }
+    </script>
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="color/default.css" rel="stylesheet">
@@ -24,19 +35,18 @@
 <body>
     <!-- navbar -->
     <div class="navbar-wrapper">
-        <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar navbar-fixed-top">
             <div class="navbar-inner">
                 <div class="container">
                     <!-- Responsive navbar -->
                     <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                         <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
                     </a>
-                    <h1 class="brand"><a href="index.html">D. Korpics</a></h1>
+                    <h1 class="brand"><a href="index.html">Diane Korpics</a></h1>
                     <!-- navigation -->
                     <nav class="pull-right nav-collapse collapse">
                         <ul id="menu-main" class="nav">
                             <li><a title="team" href="#about">About</a></li>
-                            <!--<li><a title="services" href="#services">Services</a></li>-->
                             <li><a title="works" href="#works">Projects</a></li>
                             <li><a title="contact" href="#contact">Contact</a></li>
                             <!--<li><a href="page.html">Page</a></li>-->
@@ -90,7 +100,6 @@
                     </blockquote>
                 </div>
                 <div class="span4 aligncenter flyRight">
-                    <!--<i class="icon-coffee icon-10x"></i>-->
                     <img src="img/keytosuccess_clipped.png" />
                 </div>
             </div>
@@ -113,13 +122,8 @@
                     <div class="row">
                         <div class="span1 flyIn">
                             <div class="people">
-                                <!--<img class="team-thumb img-circle" src="img/team/img-1.jpg" alt="" />-->
-                                <!--<img class="team-thumb img-circle" src="img/team/oilwell3.png" alt="" />
-                                <p>
-                                    <a class="hats" data-popup-open="popup-1" href="#">Reservoir Engineer</a>
-                                </p>-->
                                 <p class="e_wiggle">
-                                    <a class="hats e_wiggle" data-popup-open="popup-1" href="#">
+                                    <a href="#ResEng" id="toggle" class="hats e_wiggle" onclick="toggle_visibility('ResEng','hideworks');">
                                         <img class="team-thumb img-circle e_wiggle" src="img/team/oilwell3.png" alt="" />
                                         <br />Reservoir Engineer
                                     </a>
@@ -127,26 +131,10 @@
                             </div>
                         </div>
 
-                        <!-- popup-1 for Reservoir Engineer -->
-
-                        <div class="popup" data-popup="popup-1">
-                            <div class="popup-inner">
-                                <h2>Reservoir Engineer</h2>
-                                <p>My job in the Research and Development Group at British Petroleum was very rewarding.  I was the liason between the developers and the users of a complex reservoir simulator (VIP). I also used the model to predict oil and gas production from the Prudhoe Bay reservoir in Alaska.  Besides helping and training the users, my favorite part of the job was writing FORTRAN utilities to enable the simulator to work with third-party pre-and post-processors in order to improve efficiency.</p>
-                                <p><a data-popup-close="popup-1" href="#">Close</a></p>
-                                <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
-                            </div>
-                        </div>
-                        <!-- end of popup-1 -->
-
                         <div class="span1 flyIn">
                             <div class="people">
-                                <!--<img class="team-thumb img-circle" src="img/team/homeschoolmom2.jpg" alt="" />
-                                <p>
-                                    <a class="hats" data-popup-open="popup-2" href="#">Homeschool Mom</a>
-                                </p>-->
                                 <p class="e_wiggle">
-                                    <a class="hats e_wiggle" data-popup-open="popup-2" href="#">
+                                    <a href="#Mom" id="toggle" class="hats e_wiggle" onclick="toggle_visibility('Mom', 'hideworks');">
                                         <img class="team-thumb img-circle e_wiggle" src="img/team/homeschoolmom2.jpg" alt="" />
                                         <br />Homeschool Mom
                                     </a>
@@ -154,25 +142,10 @@
                             </div>
                         </div>
 
-                        <!-- popup-2 for Homeschool Mom -->
-                        <div class="popup" data-popup="popup-2">
-                            <div class="popup-inner">
-                                <h2>Homeschool Mom</h2>
-                                <p>Homeschooling my children was my most challenging job.  Besides juggling the roles of mother, teacher, and wife, combining the right balance of academic challenge, extra-curricular activities, and hands-on experiences was difficult. Selecting curriculums, creating lesson plans, scheduling classes and activities, providing assessments for the state, teaching as part of coop groups, and volunteering to run debate tournaments were just some among many of my responsibilities.  I like to think that I was successful based on the accomplishments of my children.  Two of the three received college merit scholarships and graduated Summa Cum Laude from their colleges.  The other is currently finishing up a two-year associate degree in Accounting Technology after being adopted at age 14 with no English language skills and having been paralyzed several months before the adoption was final.</p>
-                                <p><a data-popup-close="popup-2" href="#">Close</a></p>
-                                <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
-                            </div>
-                        </div>
-                        <!-- end of popup-2 -->
-
                         <div class="span1 flyIn">
                             <div class="people">
-                                <!--<img class="team-thumb img-circle" src="img/team/teacher2.png" alt="" />
-                                <p>
-                                    <a class="hats" data-popup-open="popup-3" href="#">Math Teacher</a>
-                                </p>-->
                                 <p class="e_wiggle">
-                                    <a class="hats e_wiggle" data-popup-open="popup-3" href="#">
+                                    <a href="#Teacher" id="toggle" class="hats e_wiggle" onclick="toggle_visibility('Teacher','hideworks');">
                                         <img class="team-thumb img-circle e_wiggle" src="img/team/teacher2.png" alt="" />
                                         <br />Math Teacher
                                     </a>
@@ -180,25 +153,10 @@
                             </div>
                         </div>
 
-                        <!-- popup-3 for Math Teacher -->
-                        <div class="popup" data-popup="popup-3">
-                            <div class="popup-inner">
-                                <h2>Math Teacher</h2>
-                                <p>While homeschooling my children, I was recruited by a local, private school to teach math and science to high-school students.  As much as I love mathematics, I wasn't sure if I was cut out to be a teacher.  I have been told by many of the students and families that my success as a teacher stemmed from my passion for the subject.  Not only did I enjoy sharing my love for math, but I truly wanted each student to succeed.  I knew that not all students would have an aptitude for math, but I wanted them all to at least appreciate its logic and order and usefulness in technology and every-day life.  My favorite class was AP Calculus AB/BC as the students in that class were mostly very gifted and eager to learn.  My second favorite class was pre-Algebra as I had the opportunity to try to instill a love of math in students who may not have previously enjoyed it.  In addition to all the math classes from pre-algebra to calculus, I also taught chemistry and physics.</p>
-                                <p><a data-popup-close="popup-3" href="#">Close</a></p>
-                                <a class="popup-close" data-popup-close="popup-3" href="#">x</a>
-                            </div>
-                        </div>
-                        <!-- end of popup-3 -->
-
                         <div class="span1 flyIn">
                             <div class="people">
-                                <!--<img class="team-thumb img-circle" src="img/team/finance2.jpg" alt="" />
-                                <p>
-                                    <a class="hats" data-popup-open="popup-4" href="#">Financial Officer</a>
-                                </p>-->
                                 <p class="e_wiggle">
-                                    <a class="hats e_wiggle" data-popup-open="popup-4" href="#">
+                                    <a href="#Finance" id="toggle" class="hats e_wiggle" onclick="toggle_visibility('Finance', 'hideworks');">
                                         <img class="team-thumb img-circle e_wiggle" src="img/team/finance2.jpg" alt="" />
                                         <br />Financial Officer
                                     </a>
@@ -206,25 +164,10 @@
                             </div>
                         </div>
 
-                        <!-- popup-4 for Financial Officer -->
-                        <div class="popup" data-popup="popup-4">
-                            <div class="popup-inner">
-                                <h2>VP Finance</h2>
-                                <p>In 1992, my father formed a corporation to continue his consulting in the oil and gas industry.  He knew I had recently left my job to raise my children and didn't want to pay an accountant to handle the business side of his affairs, so he asked me if I might be willing to handle the business side of things.  I told him yes even though I had no idea how to do it.  I purchased Quickbooks and learned how to use it and hired a tax attorney the first year to teach me how to do the corporate taxes.  I have handled the corporate finances ever since.  Although the work is fairly simple as there are only three employees, I have handled various situations over the years, such as implementing a SEP IRA plan, a health care plan, a corporate name change, a change from a C-corp to an S-corp, and the transfer of ownership.  This is in addition to the normal activities of bookkeeping, payroll, invoicing, and taxes. </p>
-                                <p><a data-popup-close="popup-4" href="#">Close</a></p>
-                                <a class="popup-close" data-popup-close="popup-4" href="#">x</a>
-                            </div>
-                        </div>
-                        <!-- end of popup-4 -->
-
                         <div class="span1 flyIn">
                             <div class="people">
-                                <!--<img class="team-thumb img-circle" src="img/team/hiker1.png" alt="" />
-                                <p>
-                                    <a class="hats" data-popup-open="popup-5" href="#">Hiking Enthusiast</a>
-                                </p>-->
                                 <p class="e_wiggle">
-                                    <a class="hats e_wiggle" data-popup-open="popup-5" href="#">
+                                    <a href="#Hiker" id="toggle" class="hats e_wiggle" onclick="toggle_visibility('Hiker', 'hideworks');">
                                         <img class="team-thumb img-circle e_wiggle" src="img/team/hiker1.png" alt="" />
                                         <br />Hiking Enthusiast
                                     </a>
@@ -232,43 +175,16 @@
                             </div>
                         </div>
 
-                        <!-- popup-5 for Hiking Enthusiast -->
-                        <div class="popup" data-popup="popup-5">
-                            <div class="popup-inner">
-                                <h2>Hiking Enthusiast</h2>
-                                <p>I had to include this as it is my latest hobby.  A few years ago, a friend called me and said, "Would you want to hike the Appalachian Trail with me?"  I immediately replied, "Yes, what is the Appalachian Trail?"  Three months later, we had purchased backpacks, light-weight equipment, and broken in our boots.  We hiked 200 miles in a little over two weeks and were talked into signing up to do the whole trail (in sections anyway!).  Last year, we only hiked 8 days because of an injury but were able to complete 150 miles despite the injury.  Our inspiration is Grandma Gatewood who hiked the entire ~2100 miles when she was 67 years old after telling her grown children she was "going for a walk."  She walked the trail two more times, the last when she was 75 years old.  My friend and I figure we have many years to complete the remaining 1750 miles!</p>
-                                <p><a data-popup-close="popup-5" href="#">Close</a></p>
-                                <a class="popup-close" data-popup-close="popup-5" href="#">x</a>
-                            </div>
-                        </div>
-                        <!-- end of popup-5 -->
-
                         <div class="span1 flyIn">
                             <div class="people">
-                                <!--<img class="team-thumb img-circle" src="img/team/computer1.png" alt="" />
-                                <p>
-                                    <a class="hats" data-popup-open="popup-6" href="#">Software Developer</a>
-                                </p>-->
                                 <p class="e_wiggle">
-                                    <a class="hats e_wiggle" data-popup-open="popup-6" href="#">
+                                    <a href="#SoftEng" id="toggle" class="hats e_wiggle" onclick="toggle_visibility('SoftEng', 'hideworks');">
                                         <img class="team-thumb img-circle e_wiggle" src="img/team/computer1.png" alt="" />
                                         <br />Software Developer
                                     </a>
                                 </p>
                             </div>
                         </div>
-
-                        <!-- popup-6 for Software Developer -->
-                        <div class="popup" data-popup="popup-6">
-                            <div class="popup-inner">
-                                <h2>Software Developer</h2>
-                                <p>Finally, we come to my new "hat".  This is my favorite "hat" because it is my true passion.  I worked as an engineer because I was starting out in life and needed to work.  I homeschooled my children because I felt it was the best option for them.  I taught math because there was a need in the community that I could fill.  I handled the financial duties of my father's corporation as a favor to him.  But, I code because I want to!  To me, there is almost nothing as satisfying as creating a program to do what you want it to do, having it NOT do what you wanted it to do, and then figuring out how to fix it!  I can work for hours and hours on a program but feel like only minutes have passed. In the words of Marc Anthony, "If you do what you love, you'll never work a day in your life."</p>
-                                <p><a data-popup-close="popup-6" href="#">Close</a></p>
-                                <a class="popup-close" data-popup-close="popup-6" href="#">x</a>
-                            </div>
-                        </div>
-                        <!-- end of popup-6 -->
-
                     </div>
 
                 </div>
@@ -282,301 +198,317 @@
         <!-- /.container -->
     </section>
     <!-- end section: team -->
-    <!-- section: works/projects -->
-    <section id="works" class="section">
-        <div class="container clearfix">
-            <h4>My Projects</h4>
-            <!-- portfolio filter -->
-            <div class="row">
-                <div id="filters" class="span12">
-                    <ul class="clearfix">
-                        <li>
-                            <a href="#" data-filter="*" class="active">
-                                <h5>All</h5>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" data-filter=".web">
-                                <h5>OOP</h5>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" data-filter=".print">
-                                <h5>HTML/CSS</h5>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" data-filter=".design">
-                                <h5>ASP.NET MVC</h5>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" data-filter=".photography">
-                                <h5>SQL</h5>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- END PORTFOLIO FILTERING -->
+    <!--start section ResEng -->
+    <section id="ResEng" style="display:none">
+        <div id="grad" class="container">
+            <div class="row textbox">
+                <h2>Reservoir Engineer</h2>
+                <p>My job in the Research and Development Group at British Petroleum was very rewarding.  I was the liason between the developers and the users of a complex reservoir simulator (VIP). I also used the model to predict oil and gas production from the Prudhoe Bay reservoir in Alaska.  Besides helping and training the users, my favorite part of the job was writing FORTRAN utilities to enable the simulator to work with third-party pre-and post-processors in order to improve efficiency.</p>
+                <p><a id="close" href="#about" onclick="toggle_visibility('ResEng', 'hideworks');">Close</a></p>
+                <a id="close" class="popup-close" href="#about" onclick="toggle_visibility('ResEng', 'hideworks');">x</a>
             </div>
-            <div class="row">
-                <div class="span12">
-                    <div id="portfolio-wrap">
-                        <!-- portfolio item -->
-                        <div class="portfolio-item grid print design">
-                            <div class="portfolio">
-                                 <a href="hawaii.html" >
-                                    <img src="img/works/Kauai.jpg" alt="" />
-                                    <div class="portfolio-overlay">
-                                        <div class="thumb-info">
-                                            <h5>Hawaii in Review</h5>
-                                            <i class="icon-plus icon-2x"></i>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
+        </div>
+    </section>
+    <!-- end section: ResEng -->
+    <!--start section Mom -->
+    <section id="Mom" style="display:none">
+        <div id="grad" class="container">
+            <div class="row textbox">
+                <h2>Homeschool Mom</h2>
+                <p>Homeschooling my children was my most challenging job.  Besides juggling the roles of mother, teacher, and wife, combining the right balance of academic challenge, extra-curricular activities, and hands-on experiences was difficult. Selecting curriculums, creating lesson plans, scheduling classes and activities, providing assessments for the state, teaching as part of coop groups, and volunteering to run debate tournaments were just some among many of my responsibilities.  I like to think that I was successful based on the accomplishments of my children.  Two of the three received college merit scholarships and graduated Summa Cum Laude from their colleges.  The other is currently finishing up a two-year associate degree in Accounting Technology after being adopted at age 14 with no English language skills and having been paralyzed several months before the adoption was final.</p>
+                <p><a id="close" href="#about" onclick="toggle_visibility('Mom', 'hideworks');">Close</a></p>
+                <a id="close" class="popup-close" href="#about" onclick="toggle_visibility('Mom', 'hideworks');">x</a>
+            </div>
+        </div>
+    </section>
+    <!-- end section: Mom -->
+    <!--start section Teacher -->
+    <section id="Teacher" style="display:none">
+        <div id="grad" class="container">
+            <div class="row textbox">
+                <h2>Math Teacher</h2>
+                <p>While homeschooling my children, I was recruited by a local, private school to teach math and science to high-school students.  As much as I love mathematics, I wasn't sure if I was cut out to be a teacher.  I have been told by many of the students and families that my success as a teacher stemmed from my passion for the subject.  Not only did I enjoy sharing my love for math, but I truly wanted each student to succeed.  I knew that not all students would have an aptitude for math, but I wanted them all to at least appreciate its logic and order and usefulness in technology and every-day life.  My favorite class was AP Calculus AB/BC as the students in that class were mostly very gifted and eager to learn.  My second favorite class was pre-Algebra as I had the opportunity to try to instill a love of math in students who may not have previously enjoyed it.  In addition to all the math classes from pre-algebra to calculus, I also taught chemistry and physics.</p>
+                <p><a id="close" href="#about" onclick="toggle_visibility('Teacher', 'hideworks');">Close</a></p>
+                <a id="close" class="popup-close" href="#about" onclick="toggle_visibility('Teacher', 'hideworks');">x</a>
+            </div>
+        </div>
+    </section>
+    <!-- end section: Teacher -->
+    <!--start section Finance -->
+    <section id="Finance" style="display:none">
+        <div id="grad" class="container">
+            <div class="row textbox">
+                <h2>VP Finance</h2>
+                <p>In 1992, my father formed a corporation to continue his consulting in the oil and gas industry.  He knew I had recently left my job to raise my children and didn't want to pay an accountant to handle the business side of his affairs, so he asked me if I might be willing to handle the business side of things.  I told him yes even though I had no idea how to do it.  I purchased Quickbooks and learned how to use it and hired a tax attorney the first year to teach me how to do the corporate taxes.  I have handled the corporate finances ever since.  Although the work is fairly simple as there are only three employees, I have handled various situations over the years, such as implementing a SEP IRA plan, a health care plan, a corporate name change, a change from a C-corp to an S-corp, and the transfer of ownership.  This is in addition to the normal activities of bookkeeping, payroll, invoicing, and taxes. </p>
+                <p><a id="close" href="#about" onclick="toggle_visibility('Finance', 'hideworks');">Close</a></p>
+                <a id="close" class="popup-close" href="#about" onclick="toggle_visibility('Finance', 'hideworks');">x</a>
+            </div>
+        </div>
+    </section>
+    <!-- end section: Finance -->
+    <!--start section: Hiker -->
+    <section id="Hiker" style="display:none">
+        <div id="grad" class="container">
+            <div class="row textbox">
+                <h2>Hiking Enthusiast</h2>
+                <p>I had to include this as it is my latest hobby.  A few years ago, a friend called me and said, "Would you want to hike the Appalachian Trail with me?"  I immediately replied, "Yes, what is the Appalachian Trail?"  Three months later, we had purchased backpacks, light-weight equipment, and broken in our boots.  We hiked 200 miles in a little over two weeks and were talked into signing up to do the whole trail (in sections anyway!).  Last year, we only hiked 8 days because of an injury but were able to complete 150 miles despite the injury.  Our inspiration is Grandma Gatewood who hiked the entire ~2100 miles when she was 67 years old after telling her grown children she was "going for a walk."  She walked the trail two more times, the last when she was 75 years old.  My friend and I figure we have many years to complete the remaining 1750 miles!</p>
+                <p><a id="close" href="#about" onclick="toggle_visibility('Hiker', 'hideworks');">Close</a></p>
+                <a id="close" class="popup-close" href="#about" onclick="toggle_visibility('Hiker', 'hideworks');">x</a>
+            </div>
+        </div>
+    </section>
+    <!-- end section: Hiker -->
+    <!--start section: SoftEng -->
+    <section id="SoftEng" style="display:none">
+        <div id="grad" class="container">
+            <div class="row textbox">
+                <h2>Software Developer</h2>
+                <p>Finally, we come to my new "hat".  This is my favorite "hat" because it is my true passion.  I worked as an engineer because I was starting out in life and needed to work.  I homeschooled my children because I felt it was the best option for them.  I taught math because there was a need in the community that I could fill.  I handled the financial duties of my father's corporation as a favor to him.  But, I code because I want to!  To me, there is almost nothing as satisfying as creating a program to do what you want it to do, having it NOT do what you wanted it to do, and then figuring out how to fix it!  I can work for hours and hours on a program but feel like only minutes have passed. In the words of Marc Anthony, "If you do what you love, you'll never work a day in your life."</p>
+                <p><a id="close" href="#about" onclick="toggle_visibility('SoftEng', 'hideworks');">Close</a></p>
+                <a id="close" class="popup-close" href="#about" onclick="toggle_visibility('SoftEng', 'hideworks');">x</a>
+            </div>
+        </div>
+    </section>
+    <!-- end section: SoftEng -->
 
-                        <!-- end portfolio item -->
-                        <!-- portfolio item -->
-                        <div class="portfolio-item grid print design photography">
-                            <div class="portfolio">
-                                <a href="wardrobe.html">
-                                    <img src="img/works/closet.jpg" alt="" />
-                                    <div class="portfolio-overlay">
-                                        <div class="thumb-info">
-                                            <h5>What's In YOUR Closet</h5>
-                                            <i class="icon-plus icon-2x"></i>
+    <div id="hideworks">
+        <!-- section: works/projects -->
+        <section id="works" class="section">
+            <div class="container clearfix">
+                <h4>My Projects</h4>
+                <!-- portfolio filter -->
+                <div class="row">
+                    <div id="filters" class="span12">
+                        <ul class="clearfix">
+                            <li>
+                                <a href="#" data-filter="*" class="active">
+                                    <h5>All</h5>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" data-filter=".web">
+                                    <h5>OOP</h5>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" data-filter=".print">
+                                    <h5>HTML/CSS</h5>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" data-filter=".design">
+                                    <h5>ASP.NET MVC</h5>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" data-filter=".photography">
+                                    <h5>SQL</h5>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- END PORTFOLIO FILTERING -->
+                </div>
+                <div class="row">
+                    <div class="span12">
+                        <div id="portfolio-wrap">
+                            <!-- portfolio item -->
+                            <div class="portfolio-item grid print design">
+                                <div class="portfolio">
+                                    <a href="#Hawaii" id="toggle" class="project" onclick="toggle_visibility('Hawaii', 'hidespacer');">
+                                        <!--<a href="hawaii.html">-->
+                                        <img src="img/works/Kauai.jpg" alt="" />
+                                        <div class="portfolio-overlay">
+                                            <div class="thumb-info">
+                                                <h5>Hawaii in Review</h5>
+                                                <i class="icon-plus icon-2x"></i>
+                                            </div>
                                         </div>
-                                    </div>
-                                </a>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        <!-- end portfolio item -->
-                        <!-- portfolio item -->
-                        <div class="portfolio-item grid web">
-                            <div class="portfolio">
-                                <a href="#">
-                                    <img src="img/works/piggybank1.jpg" alt="" />
-                                    <div class="portfolio-overlay">
-                                        <div class="thumb-info">
-                                            <h5>Bank Account</h5>
-                                            <i class="icon-plus icon-2x"></i>
+
+                            <!-- end portfolio item -->
+                            <!-- portfolio item -->
+                            <div class="portfolio-item grid print design photography">
+                                <div class="portfolio">
+                                    <a href="wardrobe.html">
+                                        <img src="img/works/closet.jpg" alt="" />
+                                        <div class="portfolio-overlay">
+                                            <div class="thumb-info">
+                                                <h5>What's In YOUR Closet</h5>
+                                                <i class="icon-plus icon-2x"></i>
+                                            </div>
                                         </div>
-                                    </div>
-                                </a>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        <!-- end portfolio item -->
-                        <!-- portfolio item -->
-                        <div class="portfolio-item grid web">
-                            <div class="portfolio">
-                                <a href="#">
-                                    <img src="img/works/virtualpet.jpg" alt="" />
-                                    <div class="portfolio-overlay">
-                                        <div class="thumb-info">
-                                            <h5>Virtual Pet</h5>
-                                            <i class="icon-plus icon-2x"></i>
+                            <!-- end portfolio item -->
+                            <!-- portfolio item -->
+                            <div class="portfolio-item grid web">
+                                <div class="portfolio">
+                                    <a href="#">
+                                        <img src="img/works/piggybank1.jpg" alt="" />
+                                        <div class="portfolio-overlay">
+                                            <div class="thumb-info">
+                                                <h5>Bank Account</h5>
+                                                <i class="icon-plus icon-2x"></i>
+                                            </div>
                                         </div>
-                                    </div>
-                                </a>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        <!-- end portfolio item -->
-                        <!-- portfolio item -->
-                        <div class="portfolio-item grid print">
-                            <div class="portfolio">
-                                <a href="tuscanyvilla.html">
-                                    <img src="img/works/VillaOnWater.jpg" class="villa" alt="" />
-                                    <div class="portfolio-overlay">
-                                        <div class="thumb-info">
-                                            <h5>Tuscany Villa</h5>
-                                            <i class="icon-plus icon-2x"></i>
+                            <!-- end portfolio item -->
+                            <!-- portfolio item -->
+                            <div class="portfolio-item grid web">
+                                <div class="portfolio">
+                                    <a href="#">
+                                        <img src="img/works/virtualpet.jpg" alt="" />
+                                        <div class="portfolio-overlay">
+                                            <div class="thumb-info">
+                                                <h5>Virtual Pet</h5>
+                                                <i class="icon-plus icon-2x"></i>
+                                            </div>
                                         </div>
-                                    </div>
-                                </a>
+                                    </a>
+                                </div>
                             </div>
+                            <!-- end portfolio item -->
+                            <!-- portfolio item -->
+                            <div class="portfolio-item grid print">
+                                <div class="portfolio">
+                                    <a href="tuscanyvilla.html">
+                                        <img src="img/works/VillaOnWater.jpg" class="villa" alt="" />
+                                        <div class="portfolio-overlay">
+                                            <div class="thumb-info">
+                                                <h5>Tuscany Villa</h5>
+                                                <i class="icon-plus icon-2x"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- end portfolio item -->
                         </div>
-                        <!-- end portfolio item -->
-                        <!-- portfolio item -->
-                        <!--<div class="portfolio-item grid photography web">
-                            <div class="portfolio">
-                                <a href="img/works/big.jpg" data-pretty="prettyPhoto[gallery1]" class="portfolio-image">
-                                <img src="img/works/6.png" alt="" />
-                                <div class="portfolio-overlay">
-                                    <div class="thumb-info">
-                                        <h5>Portfolio name</h5>
-                                        <i class="icon-plus icon-2x"></i>
-                                    </div>
-                                </div>
-                                </a>
-                            </div>
-                        </div>-->
-                        <!-- end portfolio item -->
-                        <!-- portfolio item -->
-                        <!--<div class="portfolio-item grid photography web">
-                            <div class="portfolio">
-                                <a href="img/works/big.jpg" data-pretty="prettyPhoto[gallery1]" class="portfolio-image">
-                                <img src="img/works/7.png" alt="" />
-                                <div class="portfolio-overlay">
-                                    <div class="thumb-info">
-                                        <h5>Portfolio name</h5>
-                                        <i class="icon-plus icon-2x"></i>
-                                    </div>
-                                </div>
-                                </a>
-                            </div>
-                        </div>-->
-                        <!-- end portfolio item -->
-                        <!-- portfolio item -->
-                        <!--<div class="portfolio-item grid photography">
-                            <div class="portfolio">
-                                <a href="img/works/big.jpg" data-pretty="prettyPhoto[gallery1]" class="portfolio-image">
-                                <img src="img/works/8.png" alt="" />
-                                <div class="portfolio-overlay">
-                                    <div class="thumb-info">
-                                        <h5>Portfolio name</h5>
-                                        <i class="icon-plus icon-2x"></i>
-                                    </div>
-                                </div>
-                                </a>
-                            </div>
-                        </div>-->
-                        <!-- end portfolio item -->
-                        <!-- portfolio item -->
-                        <!--<div class="portfolio-item grid photography web">
-                            <div class="portfolio">
-                                <a href="img/works/big.jpg" data-pretty="prettyPhoto[gallery1]" class="portfolio-image">
-                                <img src="img/works/9.png" alt="" />
-                                <div class="portfolio-overlay">
-                                    <div class="thumb-info">
-                                        <h5>Portfolio name</h5>
-                                        <i class="icon-plus icon-2x"></i>
-                                    </div>
-                                </div>
-                                </a>
-                            </div>
-                        </div>-->
-                        <!-- end portfolio item -->
-                        <!-- portfolio item -->
-                        <!--<div class="portfolio-item grid design web">
-                            <div class="portfolio">
-                                <a href="img/works/big.jpg" data-pretty="prettyPhoto[gallery1]" class="portfolio-image">
-                                <img src="img/works/10.png" alt="" />
-                                <div class="portfolio-overlay">
-                                    <div class="thumb-info">
-                                        <h5>Portfolio name</h5>
-                                        <i class="icon-plus icon-2x"></i>
-                                    </div>
-                                </div>
-                                </a>
-                            </div>
-                        </div>-->
-                        <!-- end portfolio item -->
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- spacer section -->
-    <section class="spacer bg3">
-        <div class="container">
-            <div class="row">
-                <div class="span12 aligncenter flyLeft">
-                    <blockquote class="large">
-                        Success is not final; failure is not fatal.  It is the courage to continue that counts. <cite>Winston Churchill</cite>
-                    </blockquote>
-                </div>
-                <div class="span12 aligncenter flyRight">
-                    <img src="img/turtle2_clipped.png" class="icon-rocket icon-10x" />
-                    <!--<i class="icon-rocket icon-10x"></i>-->
+        </section>
+        <!--start section: Project Hawaii -->
+        <section id="Hawaii" style="display:none">
+            <div id="grad" class="container">
+                <div class="row textbox">
+                    <h2>Reservoir Engineer</h2>
+                    <p>My job in the Research and Development Group at British Petroleum was very rewarding.  I was the liason between the developers and the users of a complex reservoir simulator (VIP). I also used the model to predict oil and gas production from the Prudhoe Bay reservoir in Alaska.  Besides helping and training the users, my favorite part of the job was writing FORTRAN utilities to enable the simulator to work with third-party pre-and post-processors in order to improve efficiency.</p>
+                    <p><a id="close" href="#works" onclick="toggle_visibility('Hawaii', 'hidespacer');">Close</a></p>
+                    <a id="close" class="popup-close" href="#works" onclick="toggle_visibility('Hawaii', 'hidespacer');">x</a>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- end spacer section -->
-    <!-- section: contact -->
-    <section id="contact" class="section green">
-        <div class="container">
-            <h4>Send a Message</h4>
-            <p>
-                Thank you for visiting my site.  If you would like to talk with me, please fill out the form below, and I will get back to you as soon as possible.
-            </p>
-            <div class="blankdivider30">
-            </div>
-            <div class="row">
-                <div class="span12">
-                    <div class="cform" id="contact-form">
-                        <div id="sendmessage">Your message has been sent. Thank you!</div>
-                        <div id="errormessage"></div>
-                        <form action="mailto:dkorpics7@gmail.com" method="post" role="form" class="contactForm">
-                            <div class="row formboxes">
-                                <div class="span6">
-                                    <div class="field your-name form-group">
-                                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                                        <div class="validation"></div>
-                                    </div>
-                                    <div class="field your-email form-group">
-                                        <input type="text" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                                        <div class="validation"></div>
-                                    </div>
-                                    <div class="field subject form-group">
-                                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                                        <div class="validation"></div>
-                                    </div>
-                                </div>
-                                <div class="span6">
-                                    <div class="field message form-group">
-                                        <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                                        <div class="validation"></div>
-                                    </div>
-                                    <input type="submit" value="Send message" class="btn btn-theme pull-left">
-                                </div>
-                            </div>
-                        </form>
+        </section>
+        <!--end section: Project Hawaii-->
+        <div id="hidespacer">
+            <!-- spacer section -->
+            <section class="spacer bg3">
+                <div class="container">
+                    <div class="row">
+                        <div class="span12 aligncenter flyLeft">
+                            <blockquote class="large">
+                                Success is not final; failure is not fatal.  It is the courage to continue that counts. <cite>Winston Churchill</cite>
+                            </blockquote>
+                        </div>
+                        <div class="span12 aligncenter flyRight">
+                            <img src="img/turtle2_clipped.png" class="icon-rocket icon-10x" />
+                            <!--<i class="icon-rocket icon-10x"></i>-->
+                        </div>
                     </div>
                 </div>
-                <!-- ./span12 -->
-            </div>
-            <div class="row">
-                <div class="span12">
-                    <ul class="social-networks">
-                        <li><a href="#"><i class="icon-circled icon-bgdark icon-github icon-2x"></i></a></li>
-                        <li><a href="#"><i class="icon-circled icon-bgdark icon-linkedin icon-2x"></i></a></li>
-                        <!--<li><a href="#"><i class="icon-circled icon-bgdark icon-dribbble icon-2x"></i></a></li>
-                        <li><a href="#"><i class="icon-circled icon-bgdark icon-pinterest icon-2x"></i></a></li>-->
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="span6 offset3">
-                    <!--<ul class="social-networks">
-                        <li><a href="#"><i class="icon-circled icon-bgdark icon-instagram icon-2x"></i></a></li>
-                        <li><a href="#"><i class="icon-circled icon-bgdark icon-twitter icon-2x"></i></a></li>
-                        <li><a href="#"><i class="icon-circled icon-bgdark icon-dribbble icon-2x"></i></a></li>
-                        <li><a href="#"><i class="icon-circled icon-bgdark icon-pinterest icon-2x"></i></a></li>
-                    </ul>-->
-                    <p class="copyright">
-                        &copy; Maxim Theme. All rights reserved.
-                        <div class="credits">
-                            <!--
-                                All the links in the footer should remain intact.
-                                You can delete the links only if you purchased the pro version.
-                                Licensing information: https://bootstrapmade.com/license/
-                                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Maxim
-                            -->
-                            <a href="https://bootstrapmade.com/">Free Bootstrap Themes</a> by BootstrapMade.com
-                        </div>
+            </section>
+            <!-- end spacer section -->
+            <!-- section: contact -->
+            <!--<section id="contact" class="section green">-->
+            <section id="contact">
+                <div class="container">
+                    <h4>Send a Message</h4>
+                    <p>
+                        Thank you for visiting my site.  If you would like to talk with me, please fill out the form below, and I will get back to you as soon as possible.
                     </p>
+                    <div class="blankdivider30">
+                    </div>
+                    <div class="row">
+                        <div class="span12">
+                            <div class="cform" id="contact-form">
+                                <div id="sendmessage">Your message has been sent. Thank you!</div>
+                                <div id="errormessage"></div>
+                                <form action="mailto:dkorpics7@gmail.com" method="post" role="form" class="contactForm">
+                                    <div class="row formboxes">
+                                        <div class="span6">
+                                            <div class="field your-name form-group">
+                                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                                <div class="validation"></div>
+                                            </div>
+                                            <div class="field your-email form-group">
+                                                <input type="text" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                                                <div class="validation"></div>
+                                            </div>
+                                            <div class="field subject form-group">
+                                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                                                <div class="validation"></div>
+                                            </div>
+                                        </div>
+                                        <div class="span6">
+                                            <div class="field message form-group">
+                                                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                                                <div class="validation"></div>
+                                            </div>
+                                            <input type="submit" value="Send message" class="btn btn-theme pull-left">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- ./span12 -->
+                    </div>
+                    <div class="row">
+                        <div class="span12">
+                            <ul class="social-networks">
+                                <li><a href="#"><i class="icon-circled icon-bgdark icon-github icon-2x"></i></a></li>
+                                <li><a href="#"><i class="icon-circled icon-bgdark icon-linkedin icon-2x"></i></a></li>
+                                <!--<li><a href="#"><i class="icon-circled icon-bgdark icon-dribbble icon-2x"></i></a></li>
+                                <li><a href="#"><i class="icon-circled icon-bgdark icon-pinterest icon-2x"></i></a></li>-->
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <!-- ./container -->
-    </footer>
+            </section>
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="span6 offset3">
+                            <!--<ul class="social-networks">
+                                <li><a href="#"><i class="icon-circled icon-bgdark icon-instagram icon-2x"></i></a></li>
+                                <li><a href="#"><i class="icon-circled icon-bgdark icon-twitter icon-2x"></i></a></li>
+                                <li><a href="#"><i class="icon-circled icon-bgdark icon-dribbble icon-2x"></i></a></li>
+                                <li><a href="#"><i class="icon-circled icon-bgdark icon-pinterest icon-2x"></i></a></li>
+                            </ul>-->
+                            <p class="copyright">
+                                &copy; Maxim Theme. All rights reserved.
+                                <div class="credits">
+                                    <!--
+                                        All the links in the footer should remain intact.
+                                        You can delete the links only if you purchased the pro version.
+                                        Licensing information: https://bootstrapmade.com/license/
+                                        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Maxim
+                                    -->
+                                    <a href="https://bootstrapmade.com/">Free Bootstrap Themes</a> by BootstrapMade.com
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./container -->
+            </footer>
+        </div><!--end hidespacer-->
+    </div> <!--end hideworks-->
     <a href="#" class="scrollup"><i class="icon-angle-up icon-square icon-bgdark icon-2x"></i></a>
     <script src="js/jquery.js"></script>
     <script src="js/jquery.scrollTo.js"></script>
