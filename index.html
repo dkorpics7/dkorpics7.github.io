@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Swanky+and+Moo+Moo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Just+Another+Hand" rel="stylesheet">
     <script type="text/javascript">
-        function toggle_visibility(id,id2) {
+        function toggle_visibility(id, id2) {
             var e = document.getElementById(id);
             var name = "#" + id2;
             if (e.style.display == 'block') {
@@ -19,6 +22,18 @@
                 $(name).show("50000");
             }
         }
+
+        function printLetterByLetter(destination, message, speed) {
+            var i = 0;
+            var interval = setInterval(function () {
+                document.getElementById(destination).innerHTML += message.charAt(i);
+                i++;
+                if (i > message.length) {
+                    clearInterval(interval);
+                }
+            }, speed);
+        }
+
     </script>
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -34,7 +49,7 @@
 </head>
 <body>
     <!-- navbar -->
-    <div class="navbar-wrapper">
+    <div class="navbar-wrapper" id="navbarhide" display="block">
         <div class="navbar navbar-fixed-top">
             <div class="navbar-inner">
                 <div class="container">
@@ -315,7 +330,7 @@
                             <!-- portfolio item -->
                             <div class="portfolio-item grid print design">
                                 <div class="portfolio">
-                                    <a href="#Hawaii" id="toggle" class="project" onclick="toggle_visibility('Hawaii', 'hidespacer');">
+                                    <a href="#Hawaii" id="toggle" onclick="toggle_visibility('Hawaii', 'hidespacer');">
                                         <!--<a href="hawaii.html">-->
                                         <img src="img/works/Kauai.jpg" alt="" />
                                         <div class="portfolio-overlay">
@@ -395,17 +410,33 @@
             </div>
         </section>
         <!--start section: Project Hawaii -->
-        <section id="Hawaii" style="display:none">
-            <div id="grad" class="container">
-                <div class="row textbox">
-                    <h2>Reservoir Engineer</h2>
-                    <p>My job in the Research and Development Group at British Petroleum was very rewarding.  I was the liason between the developers and the users of a complex reservoir simulator (VIP). I also used the model to predict oil and gas production from the Prudhoe Bay reservoir in Alaska.  Besides helping and training the users, my favorite part of the job was writing FORTRAN utilities to enable the simulator to work with third-party pre-and post-processors in order to improve efficiency.</p>
-                    <p><a id="close" href="#works" onclick="toggle_visibility('Hawaii', 'hidespacer');">Close</a></p>
-                    <a id="close" class="popup-close" href="#works" onclick="toggle_visibility('Hawaii', 'hidespacer');">x</a>
+        <section id="Hawaii" style="display:none" class="container project">
+            <div id="hawaii" class="row project">
+                <div id="task">
+                    <!--<a href="#" onclick="printLetterByLetter('hawaiitask', 'Hello world, bonjour le monde.', 100);">click here</a>-->
+                    <h4>Hawaii in Review Project</h4>
+                    <p><scan class="bold">TASK: </scan> Develop a code-first MVC application with multiple models and foreign keys that allows users to review technology or travel.
+                    <p><scan class="bold">SKILLS:</scan>  ASP.NET, MVC, HTML5, CSS3, BOOTSTRAP</p>
+                    <p><scan class="bold">EXECUTION: </scan> My site allows users to review attractions or events they encountered while visiting a Hawaiian Island.  For each review, the user specifies the Hawaiian Island they visited.  The user may add, update, or delete reviews as well as Hawaiian Islands. In addition to being able to view condensed or detailed reviews, I added a feature where the user can view all the detailed reviews at once.  In addition, I did not allow the user to delete any of the main eight Hawaiian Islands so that these would be accessible to all users in the drop-down menu.</p>
+                    <ul class="btnformat">
+                        <li><a href="#HawaiiGif" class="button" onclick="toggle_visibility('HawaiiGif', 'hidespacer');">See Results</a></li>
+                        <li><a id="close" href="#works" class="button" onclick="toggle_visibility('Hawaii','hidespacer');">Close</a></li>
+                        <li><a href="https://github.com/dkorpics7/MVCReviewProject" class="button" target="_blank">Github Link</a></li>
+                    </ul>
                 </div>
             </div>
         </section>
         <!--end section: Project Hawaii-->
+        <section id="HawaiiGif" style="display:none" class="container project">
+            <div id="hawaiigif" class="row project">
+                <img src="img/hawaii/Webp.net-gifmaker.gif" />
+            </div>
+            <ul class="btnformat Gif">
+                <li><a id="close" href="#Hawaii" class="button" onclick="toggle_visibility('HawaiiGif','hidespacer');">Close</a></li>
+                <li><a href="https://github.com/dkorpics7/MVCReviewProject" class="button" target="_blank">Github Link</a></li>
+            </ul>
+        </section>
+
         <div id="hidespacer">
             <!-- spacer section -->
             <section class="spacer bg3">

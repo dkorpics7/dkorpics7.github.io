@@ -8,6 +8,7 @@
         $(this).attr('src', $(this).data("src"));
     });
 
+
     //pop-ups open and close for "many hats" page//
     //----- OPEN
     //$('[data-popup-open]').on('click', function (e) {

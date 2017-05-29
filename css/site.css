@@ -56,27 +56,31 @@ div.logo img {
 /* adjust font size on slides for smaller screens */
 @media (max-width: 960px) {
     div.logo img {
-    opacity: 0.4;
-    width: 132px;
+        opacity: 0.4;
+        width: 132px;
+    }
 }
-}
+
 @media (max-width: 600px) {
     #main-flexslider ul.slides li p {
         font-size: 24px;
     }
+
     div.logo img {
-    opacity: 0.4;
-    width: 112px;
+        opacity: 0.4;
+        width: 112px;
+    }
 }
-}
-    @media (max-width: 370px) {
+
+@media (max-width: 370px) {
     #main-flexslider ul.slides li p {
         font-size: 18px;
     }
+
     div.logo img {
-    opacity: 0.4;
-    width: 92px;
-}
+        opacity: 0.4;
+        width: 92px;
+    }
 }
 
 
@@ -134,7 +138,8 @@ div.logo img {
     text-align: justify;
 }
 
-/* set size of "team / many hats" pictures */
+/* set size of "team / many hats" pictures or text */
+
 
 /* italic font */
 .italic {
@@ -248,6 +253,220 @@ img.icon-rocket {
     min-width: 188px;
 }
 
+/* Project pages */
+.project {
+    margin: 0px;
+    padding: 0px;
+}
+
+#hawaii {
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.6;
+    background-image: url('../img/notebookontable.jpg');
+    background-size: cover;
+}
+
+#HawaiiGif {
+    /*margin-top:60px;*/
+    background-color: lightcyan;
+    background-size: cover;
+    width: 100vw;
+}
+
+    #hawaiigif img {
+        /*margin: 80px 50px 50px 70px;*/
+        width: 100vw;
+        height:77vh;
+        margin-left: 10px;
+        margin-top: 80px;
+        margin-bottom: 5px;
+    }
+
+#task {
+    color: #6D6D6D;
+    font-family: 'Just Another Hand', cursive;
+    width: 37vw;
+    margin-top: 90px;
+    margin-left: 190px;
+    font-size: 24px;
+    line-height: 10px;
+    z-index: 4;
+    -ms-transform: rotate(-18deg); /* IE 9 */
+    -webkit-transform: rotate(-18deg); /* Safari */
+    transform: rotate(-18deg);
+}
+
+    #task h4 {
+        color: #6D6D6D;
+        font-family: 'Just Another Hand', cursive;
+        font-size: 30px;
+    }
+
+    #task h6 {
+        color: #6D6D6D;
+        font-family: 'Just Another Hand', cursive;
+        font-size: 24px;
+    }
+
+    #task p {
+        color: #6D6D6D;
+        line-height: 1.2em;
+    }
+
+@media (min-width: 768px) and (max-width: 1010px) {
+    #task {
+        margin-top: 70px;
+        margin-left: 165px;
+    }
+
+        #task h4 {
+            font-size: 24px;
+        }
+
+        #task h6, #task p {
+            font-size: 20px;
+        }
+}
+
+@media (max-width: 767px) {
+    #task {
+        margin-top: 65px;
+        margin-left: 150px;
+        width: 42vw;
+    }
+
+        #task h4 {
+            font-size: 24px;
+        }
+
+        #task h6, #task p {
+            font-size: 20px;
+        }
+}
+
+@media (max-width: 665px) {
+    #task {
+        margin-top: 60px;
+        margin-left: 140px;
+        width: 50vw;
+    }
+
+        #task h4 {
+            font-size: 22px;
+        }
+
+        #task h6, #task p {
+            font-size: 18px;
+        }
+}
+
+@media (max-width: 665px) {
+    #task {
+        margin-top: 60px;
+        margin-left: 145px;
+        width: 50vw;
+    }
+
+        #task h4 {
+            font-size: 22px;
+        }
+
+        #task h6, #task p {
+            font-size: 18px;
+        }
+}
+
+@media (max-width : 480px) {
+    #hawaii {
+        width: 100vw;
+        height: 100vh;
+        background-image: none;
+        background-color: #ECECEC;
+        background-size: cover;
+    }
+
+    #task {
+        margin: 20px;
+        width: 85vw;
+        -ms-transform: rotate(0deg); /* IE 9 */
+        -webkit-transform: rotate(0deg); /* Safari */
+        transform: rotate(0deg);
+        vertical-align: middle;
+    }
+
+        #task h4 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        #task h6, #task p {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+}
+
+.button {
+    background-color: #e4e4e4;
+    border: 1px solid #6D6D6D;
+    color: #6D6D6D;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+/*#task ul {*/
+#task ul.btnformat {
+    margin: 0 0 20px;
+    list-style: none;
+    padding: 0;
+}
+
+/*#task ul li {*/
+ul.btnformat li {
+    display: inline-block;
+    line-height: normal;
+}
+
+#task ul.btnformat a {
+    font-size: 22px;
+    color: white;
+    background-color: #6D6D6D;
+}
+
+    #task ul.btnformat a:hover {
+        color: #6D6D6D;
+        background-color: #e4e4e4;
+    }
+
+
+#HawaiiGif ul.btnformat a {
+    color: white;
+    background-color: teal;
+}
+
+    #HawaiiGif ul.btnformat a:hover {
+        color: teal;
+        background-color: lightcyan;
+    }
+
+.Gif.btnformat {
+    margin: 0 0 5px 0;
+    font-size: 18px;
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.bold {
+    font-weight: 800;
+}
+
 /* add social media links onto contact page 
     made changes in style.css file */
 ul.social-networks {
@@ -279,5 +498,8 @@ footer {
 }
 
 a.hats, .people p {
-    color: #1BAC91;
+    line-height: 1.0em;
+}
+
+.span1.flyIn {
 }

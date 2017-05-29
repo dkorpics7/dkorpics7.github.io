@@ -1579,7 +1579,7 @@ i.icon-white {
 		padding:0;
 	}
 	
-	/*.navbar-inner {
+	.navbar-inner {
 	 padding-right: 20px;
 	 padding-left: 20px;	
 	}
@@ -1590,21 +1590,21 @@ i.icon-white {
 	
 	.navbar-inner .btn-navbar {
 		margin:20px 20px 0;
-	}*/
+	}
 	
 	.container {
 	 padding-right: 20px;
 	 padding-left: 20px;
 	}	
-	/*.navbar-inverse .navbar-inner {*/
-    /*.navbar-inner {
+
+    .navbar-inner {
 		padding:0 0 30px;
 	}
 	
 	.nav-collapse {
 		text-align:center;
 		width:100%;
-	}*/
+	}
 
 }
 
