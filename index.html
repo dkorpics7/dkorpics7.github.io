@@ -331,7 +331,6 @@
                             <div class="portfolio-item grid print design">
                                 <div class="portfolio">
                                     <a href="#Hawaii" id="toggle" onclick="toggle_visibility('Hawaii', 'hidespacer');">
-                                        <!--<a href="hawaii.html">-->
                                         <img src="img/works/Kauai.jpg" alt="" />
                                         <div class="portfolio-overlay">
                                             <div class="thumb-info">
@@ -347,7 +346,7 @@
                             <!-- portfolio item -->
                             <div class="portfolio-item grid print design photography">
                                 <div class="portfolio">
-                                    <a href="wardrobe.html">
+                                    <a href="#Wardrobe" id="toggle" onclick="toggle_visibility('Wardrobe', 'hidespacer');">
                                         <img src="img/works/closet.jpg" alt="" />
                                         <div class="portfolio-overlay">
                                             <div class="thumb-info">
@@ -392,7 +391,7 @@
                             <!-- portfolio item -->
                             <div class="portfolio-item grid print">
                                 <div class="portfolio">
-                                    <a href="tuscanyvilla.html">
+                                    <a href="#Tuscany" id="toggle" onclick="toggle_visibility('Tuscany', 'hidespacer');">
                                         <img src="img/works/VillaOnWater.jpg" class="villa" alt="" />
                                         <div class="portfolio-overlay">
                                             <div class="thumb-info">
@@ -409,9 +408,97 @@
                 </div>
             </div>
         </section>
+
         <!--start section: Project Hawaii -->
         <section id="Hawaii" style="display:none" class="container project">
-            <div id="hawaii" class="row project">
+            <div id="projectBackground" class="row project">
+                <div id="task">
+                    <h4>Hawaii in Review Project</h4>
+                    <p><scan class="bold">TASK: </scan> Develop a code-first MVC application with multiple models and foreign keys that allows users to review technology or travel.
+                    <p><scan class="bold">SKILLS:</scan>  ASP.NET, MVC, HTML5, CSS3, BOOTSTRAP</p>
+                    <p><scan class="bold">EXECUTION: </scan> My application allows users to review attractions or events they encountered while visiting a Hawaiian Island.  For each review, the user specifies the Hawaiian Island they visited.  The user may add, update, or delete reviews as well as Hawaiian Islands. In addition to being able to view condensed or detailed reviews, I added a feature where all the detailed reviews can be viewed at once.  In addition, I prevented the user from deleting any of the main eight Hawaiian Islands so that they would be accessible to all users in the drop-down menu.</p>
+                    <ul class="btnformat">
+                        <li><a href="#HawaiiGif" class="button" onclick="toggle_visibility('HawaiiGif', 'hidespacer');">See Results</a></li>
+                        <li><a id="close" href="#works" class="button" onclick="toggle_visibility('Hawaii','hidespacer');">Close</a></li>
+                        <li><a href="https://github.com/dkorpics7/MVCReviewProject" class="button" target="_blank">Github Link</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!--end section: Project Hawaii-->
+        <!--start section: Hawaii Gif-->
+        <section id="HawaiiGif" style="display:none" class="container project">
+            <div id="hawaiigif" class="row project">
+                <img src="img/hawaii/Webp.net-gifmaker.gif" />
+            </div>
+            <ul class="btnformat Gif">
+                <li><a id="close" href="#Hawaii" class="button" onclick="toggle_visibility('HawaiiGif','hidespacer');">Close</a></li>
+                <li><a href="https://github.com/dkorpics7/MVCReviewProject" class="button" target="_blank">Github Link</a></li>
+            </ul>
+        </section>
+        <!--end section: Hawaii Gif-->
+
+        <!--start section: Project Wardrobe -->
+        <section id="Wardrobe" style="display:none" class="container project">
+            <div id="projectBackground" class="row project">
+                <div id="task">
+                    <h4>What's in YOUR Closet Project</h4>
+                    <p><scan class="bold">TASK: </scan>Develop a responsive web application for managing the contents of your wardrobe.  Use SQL to create your database first, then incorporate it into an MVC project.</p>
+                    <p><scan class="bold">SKILLS:</scan>ASP.NET, MVC, MS SQL, HTML5, CSS3, BOOTSTRAP</p>
+                    <p><scan class="bold">EXECUTION: </scan><p>I started by designing eight tables in MS SQL. The first four tables were created to store tops, bottoms, shoes, and accessories, respectively.  The fifth table was designed with a foreign key from each of those categories to allow the user to design outfits from their wardrobe.  The last three tables were used to help the user enter the color, season, and occasion for each article of clothing.</p>
+                    <ul class="btnformat">
+                        <li><a href="#WardrobeGif" class="button" onclick="toggle_visibility('WardrobeGif', 'hidespacer');">See Results</a></li>
+                        <li><a id="close" href="#works" class="button" onclick="toggle_visibility('Wardrobe','hidespacer');">Close</a></li>
+                        <li><a href="https://github.com/dkorpics7/WardrobeMVC" class="button" target="_blank">Github Link</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!--end section: Project Wardrobe-->
+        <!--start section: Wardrobe Gif-->
+        <section id="WardrobeGif" style="display:none" class="container project">
+            <div id="wardrobegif" class="row project">
+                <img src="img/wardrobe/WardrobeGif.gif"/>
+            </div>
+            <ul class="btnformat Gif">
+                <li><a id="close" href="#Wardrobe" class="button" onclick="toggle_visibility('WardrobeGif','hidespacer');">Close</a></li>
+                <li><a href="https://github.com/dkorpics7/WardrobeMVC" class="button" target="_blank">Github Link</a></li>
+            </ul>
+        </section>
+        <!--end section: Wardrobe Gif-->
+
+        <!--start section: Project Tuscany Villa -->
+        <section id="Tuscany" style="display:none" class="container project">
+            <div id="projectBackground" class="row project">
+                <div id="task">
+                    <h4>Tuscany Villa Project</h4>
+                    <p><scan class="bold">TASK: </scan>Create a responsive website that closely resembles a given mockup from a designer.</p>
+                    <p><scan class="bold">SKILLS:</scan>HTML5, CSS3, BOOTSTRAP</p>
+                    <p><scan class="bold">EXECUTION: </scan><p>This project was my first website! I learned how to position images and text, format pages, create forms, and make a carousel.</p>
+                    <ul class="btnformat">
+                        <li><a href="#TuscanyGif" class="button" onclick="toggle_visibility('TuscanyGif', 'hidespacer');">See Results</a></li>
+                        <li><a id="close" href="#works" class="button" onclick="toggle_visibility('Tuscany','hidespacer');">Close</a></li>
+                        <li><a href="https://github.com/dkorpics7/Tuscany-Villa" class="button" target="_blank">Github Link</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!--end section: Project Tuscany Villa-->
+        <!--start section: Tuscany Villa Gif-->
+        <section id="TuscanyGif" style="display:none" class="container project">
+            <div id="tuscanygif" class="row project">
+                <img src="img/tuscany/TuscanyGif.gif" />
+            </div>
+            <ul class="btnformat Gif">
+                <li><a id="close" href="#Tuscany" class="button" onclick="toggle_visibility('TuscanyGif','hidespacer');">Close</a></li>
+                <li><a href="https://github.com/dkorpics7/Tuscany-Villa" class="button" target="_blank">Github Link</a></li>
+            </ul>
+        </section>
+        <!--end section: Tuscany Villa Gif-->
+
+        <!--start section: Project Hawaii -->
+        <section id="Hawaii" style="display:none" class="container project">
+            <div id="projectBackground" class="row project">
                 <div id="task">
                     <!--<a href="#" onclick="printLetterByLetter('hawaiitask', 'Hello world, bonjour le monde.', 100);">click here</a>-->
                     <h4>Hawaii in Review Project</h4>
@@ -427,6 +514,37 @@
             </div>
         </section>
         <!--end section: Project Hawaii-->
+        <!--start section: Hawaii Gif-->
+        <section id="HawaiiGif" style="display:none" class="container project">
+            <div id="hawaiigif" class="row project">
+                <img src="img/hawaii/Webp.net-gifmaker.gif"/>
+            </div>
+            <ul class="btnformat Gif">
+                <li><a id="close" href="#Hawaii" class="button" onclick="toggle_visibility('HawaiiGif','hidespacer');">Close</a></li>
+                <li><a href="https://github.com/dkorpics7/MVCReviewProject" class="button" target="_blank">Github Link</a></li>
+            </ul>
+        </section>
+        <!--end section: Hawaii Gif-->
+
+        <!--start section: Project Hawaii -->
+        <section id="Hawaii" style="display:none" class="container project">
+            <div id="projectBackground" class="row project">
+                <div id="task">
+                    <!--<a href="#" onclick="printLetterByLetter('hawaiitask', 'Hello world, bonjour le monde.', 100);">click here</a>-->
+                    <h4>Hawaii in Review Project</h4>
+                    <p><scan class="bold">TASK: </scan> Develop a code-first MVC application with multiple models and foreign keys that allows users to review technology or travel.
+                    <p><scan class="bold">SKILLS:</scan>  ASP.NET, MVC, HTML5, CSS3, BOOTSTRAP</p>
+                    <p><scan class="bold">EXECUTION: </scan> My site allows users to review attractions or events they encountered while visiting a Hawaiian Island.  For each review, the user specifies the Hawaiian Island they visited.  The user may add, update, or delete reviews as well as Hawaiian Islands. In addition to being able to view condensed or detailed reviews, I added a feature where the user can view all the detailed reviews at once.  In addition, I did not allow the user to delete any of the main eight Hawaiian Islands so that these would be accessible to all users in the drop-down menu.</p>
+                    <ul class="btnformat">
+                        <li><a href="#HawaiiGif" class="button" onclick="toggle_visibility('HawaiiGif', 'hidespacer');">See Results</a></li>
+                        <li><a id="close" href="#works" class="button" onclick="toggle_visibility('Hawaii','hidespacer');">Close</a></li>
+                        <li><a href="https://github.com/dkorpics7/MVCReviewProject" class="button" target="_blank">Github Link</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!--end section: Project Hawaii-->
+        <!--start section: Hawaii Gif-->
         <section id="HawaiiGif" style="display:none" class="container project">
             <div id="hawaiigif" class="row project">
                 <img src="img/hawaii/Webp.net-gifmaker.gif" />
@@ -436,6 +554,7 @@
                 <li><a href="https://github.com/dkorpics7/MVCReviewProject" class="button" target="_blank">Github Link</a></li>
             </ul>
         </section>
+        <!--end section: Hawaii Gif-->
 
         <div id="hidespacer">
             <!-- spacer section -->

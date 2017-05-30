@@ -201,7 +201,7 @@ a#toggle {
     }
 
     .headshot {
-        max-width: 75vw;
+        max-width: 60vw;
     }
 }
 
@@ -211,7 +211,7 @@ a#toggle {
     }
 
     .headshot {
-        max-width: 75vw;
+        max-width: 60vw;
     }
 }
 
@@ -259,25 +259,66 @@ img.icon-rocket {
     padding: 0px;
 }
 
-#hawaii {
+#projectBackground {
     width: 100vw;
     height: 100vh;
-    opacity: 0.6;
+    /*opacity: 0.6;*/
     background-image: url('../img/notebookontable.jpg');
     background-size: cover;
 }
 
 #HawaiiGif {
-    /*margin-top:60px;*/
     background-color: lightcyan;
     background-size: cover;
     width: 100vw;
 }
 
     #hawaiigif img {
+        width: 98vw;
+        height: 77vh;
+        margin-left: 10px;
+        margin-top: 80px;
+        margin-bottom: 5px;
+        margin-right: 5px;
+    }
+
+#WardrobeGif {
+    background-color: #704100;
+    background-size: cover;
+    width: 100vw;
+}
+
+    #wardrobegif img {
+        width: 98vw;
+        height: 77vh;
+        margin-left: 10px;
+        margin-top: 80px;
+        margin-bottom: 5px;
+        margin-right: 5px;
+    }
+
+@media (max-width: 767px) {
+  #hawaiigif img {
+        width: 91vw;
+    }
+  #wardrobegif img {
+      width:91vw;
+  }
+  #tuscanygif img {
+      width: 91vw;
+  }
+}
+
+#TuscanyGif {
+    background-color: lightgray;
+    background-size: cover;
+    width: 100vw;
+}
+
+    #tuscanygif img {
         /*margin: 80px 50px 50px 70px;*/
-        width: 100vw;
-        height:77vh;
+        width: 98vw;
+        height: 77vh;
         margin-left: 10px;
         margin-top: 80px;
         margin-bottom: 5px;
@@ -287,7 +328,7 @@ img.icon-rocket {
     color: #6D6D6D;
     font-family: 'Just Another Hand', cursive;
     width: 37vw;
-    margin-top: 90px;
+    margin-top: 70px;
     margin-left: 190px;
     font-size: 24px;
     line-height: 10px;
@@ -295,6 +336,11 @@ img.icon-rocket {
     -ms-transform: rotate(-18deg); /* IE 9 */
     -webkit-transform: rotate(-18deg); /* Safari */
     transform: rotate(-18deg);
+}
+#Tuscany #task {
+    margin-left: 170px;
+    margin-top:85px;
+    width:34vw;
 }
 
     #task h4 {
@@ -378,7 +424,7 @@ img.icon-rocket {
 }
 
 @media (max-width : 480px) {
-    #hawaii {
+    #projectBackground {
         width: 100vw;
         height: 100vh;
         background-image: none;
@@ -386,7 +432,7 @@ img.icon-rocket {
         background-size: cover;
     }
 
-    #task {
+    #task, #Tuscany #task {
         margin: 20px;
         width: 85vw;
         -ms-transform: rotate(0deg); /* IE 9 */
@@ -406,8 +452,6 @@ img.icon-rocket {
         }
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-}
 
 .button {
     background-color: #e4e4e4;
@@ -453,6 +497,26 @@ ul.btnformat li {
     #HawaiiGif ul.btnformat a:hover {
         color: teal;
         background-color: lightcyan;
+    }
+
+#WardrobeGif ul.btnformat a {
+    color: white;
+    background-color: #704100;
+}
+
+    #WardrobeGif ul.btnformat a:hover {
+        color: #704100;
+        background-color: moccasin;
+    }
+
+#TuscanyGif ul.btnformat a {
+    color: white ;
+    background-color: darkslateblue;
+}
+
+    #TuscanyGif ul.btnformat a:hover {
+        color: darkslateblue;
+        background-color: lightgray;
     }
 
 .Gif.btnformat {
