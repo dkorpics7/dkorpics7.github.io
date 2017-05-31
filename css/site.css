@@ -323,7 +323,29 @@ img.icon-rocket {
         margin-top: 80px;
         margin-bottom: 5px;
     }
+#bankgif {
+    width:100vw;
+    height:90vh;
+}
+    #bankgif img {
+        width:95vw;
+        height:77vh;
+        margin-left:10px;
+        margin-top: 80px;
+        margin-bottom:5px;
+    }
 
+    #petgif {
+        width:100vw;
+        height:90wh;
+    }
+    #petgif img {
+        width:95vw;
+        height:77vh;
+        margin-left:10px;
+        margin-top:80px;
+        margin-bottom:5px;
+    }
 #task {
     color: #6D6D6D;
     font-family: 'Just Another Hand', cursive;
@@ -341,6 +363,9 @@ img.icon-rocket {
     margin-left: 170px;
     margin-top:85px;
     width:34vw;
+}
+#Wardrobe #task{
+    margin-top:90px;
 }
 
     #task h4 {

@@ -361,7 +361,7 @@
                             <!-- portfolio item -->
                             <div class="portfolio-item grid web">
                                 <div class="portfolio">
-                                    <a href="#">
+                                    <a href="#Bank" id="toggle" onclick="toggle_visibility('Bank', 'hidespacer');">
                                         <img src="img/works/piggybank1.jpg" alt="" />
                                         <div class="portfolio-overlay">
                                             <div class="thumb-info">
@@ -376,7 +376,7 @@
                             <!-- portfolio item -->
                             <div class="portfolio-item grid web">
                                 <div class="portfolio">
-                                    <a href="#">
+                                    <a href="#Pet" id="toggle" onclick="toggle_visibility('Pet', 'hidespacer');">
                                         <img src="img/works/virtualpet.jpg" alt="" />
                                         <div class="portfolio-overlay">
                                             <div class="thumb-info">
@@ -496,65 +496,63 @@
         </section>
         <!--end section: Tuscany Villa Gif-->
 
-        <!--start section: Project Hawaii -->
-        <section id="Hawaii" style="display:none" class="container project">
+        <!--start section: Bank Account -->
+        <section id="Bank" style="display:none" class="container project">
             <div id="projectBackground" class="row project">
                 <div id="task">
-                    <!--<a href="#" onclick="printLetterByLetter('hawaiitask', 'Hello world, bonjour le monde.', 100);">click here</a>-->
-                    <h4>Hawaii in Review Project</h4>
-                    <p><scan class="bold">TASK: </scan> Develop a code-first MVC application with multiple models and foreign keys that allows users to review technology or travel.
-                    <p><scan class="bold">SKILLS:</scan>  ASP.NET, MVC, HTML5, CSS3, BOOTSTRAP</p>
-                    <p><scan class="bold">EXECUTION: </scan> My site allows users to review attractions or events they encountered while visiting a Hawaiian Island.  For each review, the user specifies the Hawaiian Island they visited.  The user may add, update, or delete reviews as well as Hawaiian Islands. In addition to being able to view condensed or detailed reviews, I added a feature where the user can view all the detailed reviews at once.  In addition, I did not allow the user to delete any of the main eight Hawaiian Islands so that these would be accessible to all users in the drop-down menu.</p>
+                    <h4>Bank Account Project</h4>
+                    <p><scan class="bold">TASK: </scan> Develop a console application to manage one client's bank account. You may hard-code the client into the system with only 1 checking and 1 savings account.</p>
+                    <p><scan class="bold">SKILLS:</scan>C#, OOP, Inheritance & Polymorphism</p>
+                    <p><scan class="bold">EXECUTION: </scan>I designed the application with a client class and an account class.  The account class was a base class with derived classes for checking and savings accounts.  I hard-coded 4 existing clients with account balances, but also allowed new clients to login and set up accounts. The program detects whether the user is an existing client or a new client and greets them appropriately.  The client may open accounts, view balances, and deposit or withdraw funds.  I added an overdraft feature where the client may withdraw more than the checking account balance if there is enough in the savings account to cover the deficit and still maintain a $1500 minimum balance.</p>
                     <ul class="btnformat">
-                        <li><a href="#HawaiiGif" class="button" onclick="toggle_visibility('HawaiiGif', 'hidespacer');">See Results</a></li>
-                        <li><a id="close" href="#works" class="button" onclick="toggle_visibility('Hawaii','hidespacer');">Close</a></li>
-                        <li><a href="https://github.com/dkorpics7/MVCReviewProject" class="button" target="_blank">Github Link</a></li>
+                        <li><a href="#BankGif" class="button" onclick="toggle_visibility('BankGif', 'hidespacer');">See Results</a></li>
+                        <li><a id="close" href="#works" class="button" onclick="toggle_visibility('Bank','hidespacer');">Close</a></li>
+                        <li><a href="https://github.com/dkorpics7/FinancialAdvisor" class="button" target="_blank">Github Link</a></li>
                     </ul>
                 </div>
             </div>
         </section>
-        <!--end section: Project Hawaii-->
-        <!--start section: Hawaii Gif-->
-        <section id="HawaiiGif" style="display:none" class="container project">
-            <div id="hawaiigif" class="row project">
-                <img src="img/hawaii/Webp.net-gifmaker.gif"/>
+        <!--end section: Project Bank Account-->
+        <!--start section: Bank Account Gif-->
+        <section id="BankGif" style="display:none" class="container project">
+            <div id="bankgif" class="row project">
+                <img src="img/bankacct/BankAcct.gif" />
             </div>
             <ul class="btnformat Gif">
-                <li><a id="close" href="#Hawaii" class="button" onclick="toggle_visibility('HawaiiGif','hidespacer');">Close</a></li>
-                <li><a href="https://github.com/dkorpics7/MVCReviewProject" class="button" target="_blank">Github Link</a></li>
+                <li><a id="close" href="#Bank" class="button" onclick="toggle_visibility('BankGif','hidespacer');">Close</a></li>
+                <li><a href="https://github.com/dkorpics7/FinancialAdvisor" class="button" target="_blank">Github Link</a></li>
             </ul>
         </section>
-        <!--end section: Hawaii Gif-->
+        <!--end section: Bank Account Gif-->
 
-        <!--start section: Project Hawaii -->
-        <section id="Hawaii" style="display:none" class="container project">
+        <!--start section: Project Virtual Pet -->
+        <section id="Pet" style="display:none" class="container project">
             <div id="projectBackground" class="row project">
                 <div id="task">
-                    <!--<a href="#" onclick="printLetterByLetter('hawaiitask', 'Hello world, bonjour le monde.', 100);">click here</a>-->
-                    <h4>Hawaii in Review Project</h4>
-                    <p><scan class="bold">TASK: </scan> Develop a code-first MVC application with multiple models and foreign keys that allows users to review technology or travel.
-                    <p><scan class="bold">SKILLS:</scan>  ASP.NET, MVC, HTML5, CSS3, BOOTSTRAP</p>
-                    <p><scan class="bold">EXECUTION: </scan> My site allows users to review attractions or events they encountered while visiting a Hawaiian Island.  For each review, the user specifies the Hawaiian Island they visited.  The user may add, update, or delete reviews as well as Hawaiian Islands. In addition to being able to view condensed or detailed reviews, I added a feature where the user can view all the detailed reviews at once.  In addition, I did not allow the user to delete any of the main eight Hawaiian Islands so that these would be accessible to all users in the drop-down menu.</p>
+                    <h4>Virtual Pet Project</h4>
+                    <p><scan class="bold">TASK: </scan> Create a console application for an interactive game-like virtual pet program.</p>
+                    <p><scan class="bold">SKILLS:</scan>  C# (focus on methods)</p>
+                    <p><scan class="bold">EXECUTION: </scan> My site allows the pet owner to give their pet normal care (e.g., food, water, bathroom breaks, exercise, and vet care). The pets status changes based on passing time (e.g., the pet gets hungrier as time passes), care provided by the owner, and some random events. The owner attempts to keep the pet's status in each category at an appropriate level.  An overall owner score is kept which reflects the owner's skill at caring for their pet.  If the pet is not taken care of properly, the program ends with the pet being given a new home. </p>
                     <ul class="btnformat">
-                        <li><a href="#HawaiiGif" class="button" onclick="toggle_visibility('HawaiiGif', 'hidespacer');">See Results</a></li>
-                        <li><a id="close" href="#works" class="button" onclick="toggle_visibility('Hawaii','hidespacer');">Close</a></li>
-                        <li><a href="https://github.com/dkorpics7/MVCReviewProject" class="button" target="_blank">Github Link</a></li>
+                        <li><a href="#PetGif" class="button" onclick="toggle_visibility('PetGif', 'hidespacer');">See Results</a></li>
+                        <li><a id="close" href="#works" class="button" onclick="toggle_visibility('Pet','hidespacer');">Close</a></li>
+                        <li><a href="https://github.com/dkorpics7/VirtualPet" class="button" target="_blank">Github Link</a></li>
                     </ul>
                 </div>
             </div>
         </section>
-        <!--end section: Project Hawaii-->
-        <!--start section: Hawaii Gif-->
-        <section id="HawaiiGif" style="display:none" class="container project">
-            <div id="hawaiigif" class="row project">
-                <img src="img/hawaii/Webp.net-gifmaker.gif" />
+        <!--end section: Project Virtual Pet-->
+        <!--start section: Virtual Pet Gif-->
+        <section id="PetGif" style="display:none" class="container project">
+            <div id="petgif" class="row project">
+                <img src="img/virtualpet/VirtualPet.gif" />  
             </div>
             <ul class="btnformat Gif">
-                <li><a id="close" href="#Hawaii" class="button" onclick="toggle_visibility('HawaiiGif','hidespacer');">Close</a></li>
-                <li><a href="https://github.com/dkorpics7/MVCReviewProject" class="button" target="_blank">Github Link</a></li>
+                <li><a id="close" href="#Pet" class="button" onclick="toggle_visibility('PetGif','hidespacer');">Close</a></li>
+                <li><a href="https://github.com/dkorpics7/VirtualPet" class="button" target="_blank">Github Link</a></li>
             </ul>
         </section>
-        <!--end section: Hawaii Gif-->
+        <!--end section: Virtual Pet Gif-->
 
         <div id="hidespacer">
             <!-- spacer section -->
